@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - D3 Choropleth map</title>
+  <link rel="stylesheet" href="./choroplethStyle.css">
+  <link rel="stylesheet" href="./heatStyle.css">
+  <link rel="stylesheet" href="./treeStyle.css">
+</head>
+<body>
+    <span id="char-sizing" 
+          class="character-sizing">
+      x
+    </span>
+
+    <!-- choropleth -->
+    <h1 id="title">
+        United States Educational Attainment
+    </h1>
+    <h2 id="description">
+        Percentage of adults age 25 and older with a bachelor's degree or higher (2010-2014)
+    </h2>
+    
+    <svg id="choropleth-chart" 
+         width="1200" 
+         height="800">
+    </svg>
+    <footer>
+    </footer>
+    <!-- END of choropleth -->
+
+    <!-- Tree -->
+    <h1 id="title">
+      Video Game Sales
+    </h1>
+    <h2 id="description">
+      Top 100 Most Sold Video Games Grouped by Platform (2018)
+    </h2>
+
+    <div id="tree-chart">
+    </div>
+
+    <div id="tree-legend"></div>
+    <footer>
+    </footer>
+    <!-- END of Tree -->
+
+    <!-- Heat map -->
+    <h1 id="title">
+      Monthly Global Land-Surface Temperature
+    </h1>
+    <h2 id="description">
+      Surface temperatures. 1753 - 2015: base temperature 8.66℃
+    </h2>
+    <div id="heat-chart">
+    </div>
+    <footer>
+    </footer>
+    <!-- END Heat map -->
+    
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js'>
+    </script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/geojson/0.5.0/geojson.min.js'>
+    </script>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="https://d3js.org/d3-queue.v3.min.js"></script>
+    <script src="https://d3js.org/d3-dsv.v2.min.js"></script>
+    <script src="https://d3js.org/d3-fetch.v2.min.js"></script>
+    <script src="./treeGraph.js"></script>
+    <script src="./heatMap.js"></script>
+    <script src="./choroplethGraph.js"></script>
+</body>
+</html>
